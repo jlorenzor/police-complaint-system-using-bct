@@ -1,13 +1,3 @@
-> **Note to readers:** This codebase is useful to get started with BFT consensus and as baseline when designing your own protocols. If you are looking for state-of-the-art BFT protocols, I recommend [Tusk](https://github.com/asonnino/narwhal) (asynchronous) and [Bullshark](https://github.com/asonnino/narwhal/tree/bullshark) (partially-synchronous) that provide superior performance, robustness, and scalability.
-
-# HotStuff
-
-[![build status](https://img.shields.io/github/workflow/status/asonnino/hotstuff/Rust/main?style=flat-square&logo=github)](https://github.com/asonnino/hotstuff/actions)
-[![rustc](https://img.shields.io/badge/rustc-1.64+-blue?style=flat-square&logo=rust)](https://www.rust-lang.org)
-[![license](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](LICENSE)
-
-This repo provides a minimal implementation of the [2-chain variant of the HotStuff consensus protocol](https://arxiv.org/abs/2106.10362) used at the core of [Diem](https://www.diem.com/en-us/). The codebase has been designed to be small, efficient, and easy to benchmark and modify. It has not been designed to run in production but uses real cryptography ([dalek](https://doc.dalek.rs/ed25519_dalek)), networking ([tokio](https://docs.rs/tokio)), and storage ([rocksdb](https://docs.rs/rocksdb)).
-
 ## Quick Start
 
 HotStuff is written in Rust, but all benchmarking scripts are written in Python and run with [Fabric](http://www.fabfile.org/).
@@ -25,7 +15,7 @@ You also need to install Clang (required by rocksdb) and [tmux](https://linuxize
 fab local
 ```
 
-This command may take a long time the first time you run it (compiling rust code in `release` mode may be slow) and you can customize a number of benchmark parameters in `fabfile.py`. When the benchmark terminates, it displays a summary of the execution similarly to the one below.
+This command may take a long time the first time you run it (compiling rust code in `release` mode may be slow) and you can customize a number of benchmark parameters in `fabfile.py`. When the benchmark terminates, it displays a summary of the execution similar to the one below.
 
 ```text
 -----------------------------------------
@@ -59,7 +49,7 @@ This command may take a long time the first time you run it (compiling rust code
 
 ## Next Steps
 
-The [wiki](https://github.com/asonnino/hotstuff/wiki) documents the codebase, explains its architecture and how to read benchmarks' results, and provides a step-by-step tutorial to run [benchmarks on Amazon Web Services](https://github.com/asonnino/hotstuff/wiki/AWS-Benchmarks) across multiple data centers (WAN).
+The [wiki](https://github.com/asonnino/hotstuff/wiki) documents the codebase, explains its architecture and how to read benchmarks' results.
 
 ## License
 
