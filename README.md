@@ -4,6 +4,8 @@ Este proyecto busca implementar un sistema de denuncias policiales basado en la 
 
 En esta etapa, el proyecto se encuentra en la fase de analisis y diseño. Para ello, se ha realizado un análisis de requerimientos y un diseño de la arquitectura del sistema.
 
+Comenzamos realizando una prueba de estrés con el protocolo de consenso HotStuff. Los resultados de la prueba de estrés se encuentran se pueden ver mediante gráficas en la siguiente tabla de contenidos en la sección de **Benchmarking**.
+
 ## Table of Contents
 - [Documentation](https://github.com/jlorenzor/police-complaint-system-using-bct/blob/main/documentation)
   - [Proposal](https://github.com/jlorenzor/police-complaint-system-using-bct/blob/main/documentation/Proposal.md)
@@ -16,12 +18,6 @@ En esta etapa, el proyecto se encuentra en la fase de analisis y diseño. Para e
     - [Faults vs TPS - Faults vs Latency - TPS vs Latency](https://github.com/jlorenzor/police-complaint-system-using-bct/blob/main/hotstuff/benchmark/results/plots/Faults.png)
     - [Nodes vs TPS - Nodes vs Latency - TPS vs Latency](https://github.com/jlorenzor/police-complaint-system-using-bct/blob/main/hotstuff/benchmark/results/plots/Nodes.png)
     - [Transaction Size vs TPS - Transaction Size vs Latency - TPS vs Latency](https://github.com/jlorenzor/police-complaint-system-using-bct/blob/main/hotstuff/benchmark/results/plots/Transaction%20Size.png)
-
-
-
-# Sistema de Denuncias Policiales Basado en Blockchain
-
-[Descripción de tu proyecto]
 
 ## Créditos
 
