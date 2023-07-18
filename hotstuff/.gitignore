@@ -3,7 +3,7 @@
 .db*
 db_*
 *.json
-*.log
+/logs/*.log
 
 benchmark/client
 benchmark/node

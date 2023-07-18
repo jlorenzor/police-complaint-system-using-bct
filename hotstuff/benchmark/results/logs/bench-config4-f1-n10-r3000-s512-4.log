@@ -1,0 +1,28 @@
+
+-----------------------------------------
+ SUMMARY:
+-----------------------------------------
+ + CONFIG:
+ Faults: 1 nodes
+ Committee size: 10 nodes
+ Input rate: 3,006 tx/s
+ Transaction size: 512 B
+ Execution time: 56 s
+
+ Consensus timeout delay: 5,000 ms
+ Consensus sync retry delay: 5,000 ms
+ Mempool GC depth: 50 rounds
+ Mempool sync retry delay: 5,000 ms
+ Mempool sync retry nodes: 3 nodes
+ Mempool batch size: 500,000 B
+ Mempool max batch delay: 100 ms
+
+ + RESULTS:
+ Consensus TPS: 3,208 tx/s
+ Consensus BPS: 1,642,364 B/s
+ Consensus latency: 1,650 ms
+
+ End-to-end TPS: 2,863 tx/s
+ End-to-end BPS: 1,465,865 B/s
+ End-to-end latency: 5,386 ms
+-----------------------------------------
